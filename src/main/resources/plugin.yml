@@ -1,0 +1,8 @@
+name: Chat Disabler
+version: @version@
+main: ru.idleness.minecraft.chatdisabler.ChatDisabler
+api-version: 1.15
+prefix: Chat Disabler
+authors: [ThaEin]
+description: Just disables chat on minecraft server(bukkit)
+website: https://github.com/loonybtard/chat-disabler
