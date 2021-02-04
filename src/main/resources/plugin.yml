@@ -1,4 +1,4 @@
-name: Chat Disabler
+name: Chat-Disabler
 version: @version@
 main: ru.idleness.minecraft.chatdisabler.ChatDisabler
 api-version: 1.15
@@ -6,3 +6,21 @@ prefix: Chat Disabler
 authors: [ThaEin]
 description: Just disables chat on minecraft server(bukkit)
 website: https://github.com/loonybtard/chat-disabler
+
+commands:
+  chatdisabler:
+    description: Toggle chat
+    aliases: [disablechat, chatoff, muteall]
+    permission: chatdisabler.toggle
+    usage: /chatdisabler [on,off]
+
+permissions:
+  chatdisabler.*:
+    description: All rules
+    children:
+      chatdisabler.toggle: true
+      chatdisabler.bypass: true
+  chatdisabler.toggle:
+    description: Disable/enable chat
+  chatdisabler.bypass:
+    description: Bypass disabled chat
